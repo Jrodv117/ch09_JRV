@@ -1,5 +1,4 @@
 import locale as lc
-from re import T
 
 lc.setlocale(lc.LC_ALL, "en_us")
 
