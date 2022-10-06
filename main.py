@@ -19,7 +19,7 @@ def sales_report(sales):
         region_counter += 1
 
 
-def sales_by_region():
+def sales_by_region(sales):
     region_counter = 1
     total = 0
     sum = 0
@@ -30,3 +30,11 @@ def sales_by_region():
         total += sum
         print(f"Region {str(region_counter)}: {(sum):4,.2f}")
         region_counter += 1
+
+
+def main():
+    sales_report(sales)
+    sales_by_region(sales)
+
+
+main()
