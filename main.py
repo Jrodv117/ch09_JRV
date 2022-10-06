@@ -37,6 +37,7 @@ def main():
     print(f"{'Region':16s} {'Q1':10s} {'Q2':10s} {'Q3':10s} {'Q4':10s}")
     sales_report(sales)
     grand_total = sales_by_region(sales)
+    print(f"Total annual sales, all regions: {grand_total}")
 
 
 main()
