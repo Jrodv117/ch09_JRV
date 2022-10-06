@@ -29,7 +29,6 @@ def sales_by_quarter(sales):
     for row in range(len(sales)):
         for i in range(len(sales[row])):
             quarter_sales_array[i] += sales[row][i]
-        print(quarter_sales_array)
     for row in range(len(quarter_sales_array)):
         print(f"Q{(quarter_counter)}: {(quarter_sales_array[row])}")
         quarter_counter += 1
