@@ -22,8 +22,17 @@ def sales_by_region(sales):
     return total
 
 
-def sales_by_quarter():
-    print(".")
+def sales_by_quarter(sales):
+    quarter_sales_array = [0, 0, 0, 0]
+    quarter_counter = 1
+
+    for row in range(len(sales)):
+        for i in range(len(sales[row])):
+            quarter_sales_array[i] += sales[row][i]
+        print(quarter_sales_array)
+    for row in range(len(quarter_sales_array)):
+        print(f"Q{(quarter_counter)}: {(quarter_sales_array[row])}")
+        quarter_counter += 1
 
 
 def main():
@@ -37,6 +46,7 @@ def main():
     print(f"{'Region':16s} {'Q1':10s} {'Q2':10s} {'Q3':10s} {'Q4':10s}")
     sales_report(sales)
     grand_total = sales_by_region(sales)
+    sales_by_quarter(sales)
     print(f"\nTotal annual sales, all regions: {grand_total:,.2f}")
 
 
