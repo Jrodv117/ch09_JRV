@@ -27,6 +27,7 @@ def sales_by_region(sales):
         total += sum
         print(f"Region {str(region_counter)}: {(sum):4,.2f}")
         region_counter += 1
+    return total
 
 
 def main():
