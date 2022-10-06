@@ -36,7 +36,7 @@ def main():
     print("Sales Report\n")
     print(f"{'Region':16s} {'Q1':10s} {'Q2':10s} {'Q3':10s} {'Q4':10s}")
     sales_report(sales)
-    sales_by_region(sales)
+    grand_total = sales_by_region(sales)
 
 
 main()
