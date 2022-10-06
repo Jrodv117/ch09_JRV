@@ -5,9 +5,6 @@ sales = [
     [1105.0, 4102.0, 2391.0, 1576.0],
 ]
 
-print("Sales Report\n")
-print(f"{'Region':16s} {'Q1':10s} {'Q2':10s} {'Q3':10s} {'Q4':10s}")
-
 
 def sales_report(sales):
     region_counter = 1
@@ -33,6 +30,8 @@ def sales_by_region(sales):
 
 
 def main():
+    print("Sales Report\n")
+    print(f"{'Region':16s} {'Q1':10s} {'Q2':10s} {'Q3':10s} {'Q4':10s}")
     sales_report(sales)
     sales_by_region(sales)
 
