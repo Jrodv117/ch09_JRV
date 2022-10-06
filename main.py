@@ -1,3 +1,6 @@
+import locale as lc
+
+
 def sales_report(sales):
     region_counter = 1
     for row in sales:
