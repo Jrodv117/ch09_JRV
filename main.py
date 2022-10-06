@@ -19,13 +19,13 @@ def sales_report(sales):
 def sales_by_region(sales):
     region_counter = 1
     total = 0
-    sum = 0
+    sum_of_index = 0
     print("\nTotal Sales by region:")
     for row in sales:
         for index in row:
-            sum += index
-        total += sum
-        print(f"Region {str(region_counter)}: {(sum):4,.2f}")
+            sum_of_index += index
+        total += sum_of_index
+        print(f"Region {str(region_counter)}: {(sum_of_index):4,.2f}")
         region_counter += 1
     return total
 
