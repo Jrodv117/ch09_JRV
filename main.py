@@ -22,6 +22,10 @@ def sales_by_region(sales):
     return total
 
 
+def sales_by_quarter():
+    print(".")
+
+
 def main():
     sales = [
         [1540.0, 2010.0, 2450.0, 1845.0],
