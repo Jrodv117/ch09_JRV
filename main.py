@@ -23,6 +23,7 @@ def sales_by_region(sales):
 
 
 def sales_by_quarter(sales):
+    print("\nTotal Sales by quarter: ")
     quarter_sales_array = [0, 0, 0, 0]
     quarter_counter = 1
 
